@@ -1,4 +1,4 @@
-target = test as teststr testvec testgetline cmpstr linkstr replacestr vectorsize vectorop 
+target = test as teststr testvec testgetline cmpstr linkstr replacestr vectorsize vectorop
 
 all : $(target)	
 
