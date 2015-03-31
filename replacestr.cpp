@@ -15,7 +15,7 @@ int main(){
 	for(auto s : str){
 		cout << s <<endl;
 	}
-	for (int i = 0; i < str.size(); i++ ){
+	for (unsigned int i = 0; i < str.size(); i++ ){
 		str[i] = 'X'; 
 	}
     return 0;

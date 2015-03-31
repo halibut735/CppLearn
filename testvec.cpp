@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc,char *argv[])
 {
 	vector<int> ivec{10,1};
-	for(int i =0 ; i < ivec.size() ; i++){
+	for(unsigned int i =0 ; i < ivec.size() ; i++){
 		cout<<"ivec["<<i<<"] is "<<ivec[i]<<endl;
 	}
 	return 0;
