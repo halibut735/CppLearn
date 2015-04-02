@@ -11,7 +11,7 @@ using namespace std;
 class Clock{
 	public:
 		Clock(int newH = 0, int newM = 0, int newS = 0);
-		Clock(Clock &clock);
+		Clock(const Clock &clock);
 		void setTime(int newH = 0, int newM = 0, int newS = 0);
 		void showTime();
 		int getHour();
@@ -28,7 +28,7 @@ Clock::Clock(int newH, int newM, int newS){
 	cout<<"call init function!"<<endl;
 }
 
-Clock::Clock(Clock &clock){
+Clock::Clock(const Clock &clock){
 	hour = clock.hour;
 	minute = clock.minute;
 	second = clock.second;
@@ -60,12 +60,12 @@ inline int Clock::getSecond(){
 bool isAm(Clock c){ //require 24 hour 
 	return (c.getHour() < 12);
 }
-/*
+
 Clock create(){
 	Clock c(1,2,3);
 	return c;
 }
-*/
+
 int main(){ 
 	Clock myclock(10,22,00);
 	myclock.showTime();
@@ -88,7 +88,7 @@ int main(){
 		cout<<"This time is am!"<<endl;
 	}
 	//3rd classification
-	//Clock ct = create();
-	//ct.showTime();
+	Clock ct = create();
+	ct.showTime();
     return 0;
 }

@@ -1,5 +1,4 @@
-target = test as teststr testvec testgetline cmpstr linkstr replacestr vectorsize vectorop \
-		 clock 
+target = test as teststr testvec testgetline cmpstr linkstr replacestr vectorsize vectorop base clock 
 
 all : $(target)	
 
