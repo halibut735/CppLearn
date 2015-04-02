@@ -8,7 +8,7 @@
 #!/bin/bash
 if [ $# -eq 1 ];then
 	sed -i "1s/$/ $1/g " Makefile
-	make all;
+	make $1;
 else
 	echo "useage : ./addsrc.sh srcname !"
 fi
