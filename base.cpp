@@ -40,7 +40,7 @@ class Base3 {
 
 class Derived : public Base2, public Base1, public Base3{
 	public:
-		Derived(int a, int b, int c, int d):Base1(a),number2(d),number1(c),Base2(b){}
+		Derived(int a, int b, int c, int d):Base2(b),Base1(a),number1(c),number2(d){}
 		~Derived(){
 			cout<<"Destructing Derived"<<endl;
 		}
