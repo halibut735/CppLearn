@@ -1,4 +1,6 @@
-target = test as teststr testvec testgetline cmpstr linkstr replacestr vectorsize vectorop base clock virtualbase friendclass static complex clock++ complex-nonmem virtualfunc dynamic_cast
+target = test as teststr testvec testgetline cmpstr linkstr replacestr \
+		 vectorsize vectorop base clock virtualbase friendclass static \
+		 complex clock++ complex-nonmem virtualfunc dynamic_cast testTemplate
 
 .PHONY: all clean
 
