@@ -1,8 +1,8 @@
-CC 		= g++
-FLAGS 	= -Wall -std=c++11
 target = test as teststr testvec testgetline cmpstr linkstr replacestr \
 		 vectorsize vectorop base clock virtualbase friendclass static \
-		 complex clock++ complex-nonmem virtualfunc dynamic_cast testTemplate
+		 complex clock++ complex-nonmem virtualfunc dynamic_cast testTemplate vectorinsert
+CC 		= g++
+FLAGS 	= -Wall -std=c++11
 
 .PHONY: all clean
 
