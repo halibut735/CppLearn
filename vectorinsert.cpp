@@ -16,7 +16,7 @@ int main(){
 		cin >> tmp;
 		vectofint.push_back(tmp);
 	}
-	for(auto it = vectofint.begin();it != vectofint.end() && !vectofint.empty();it++){
+	for(auto it = vectofint.begin();it != vectofint.end();it++){
 		(*it) = (*it) << 1;
 	}
 	
