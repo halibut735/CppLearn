@@ -7,7 +7,7 @@
 
 #!/bin/bash
 if [ $# -eq 1 ];then
-	sed -i "5s/$/ $1/g " Makefile
+	sed -i "6s/$/ $1/g " Makefile
 	make $1;
 else
 	echo "useage : ./addsrc.sh srcname !"
