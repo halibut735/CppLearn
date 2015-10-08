@@ -5,7 +5,7 @@ target = test as teststr testvec testgetline cmpstr linkstr replacestr \
 		 testvirtual  testvirtual1 testvtable testvtable1 testvtable2 \
 		 testvtable3 testvtable4 testsizeofpoint 
 CC 		= g++
-FLAGS 	= -Wall -std=c++11
+FLAGS 	= -Wall -Wextra -std=c++11
 
 .PHONY: all clean
 
