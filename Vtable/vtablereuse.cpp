@@ -50,7 +50,7 @@ int main(){
 	cout<<&(vtab[0][1])<<" | "<<(long *)vtab[0][1]<<endl;
 	cout<<&(vtab[0][2])<<" | "<<(long *)vtab[0][2]<<endl;
 	
-	Fun pFun = (Fun)vtab[0][0];
+	pFun = (Fun)vtab[0][0];
 	pFun();
 	b.f();
 	system("cat /proc/self/maps");
